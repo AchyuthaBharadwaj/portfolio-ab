@@ -51,7 +51,7 @@ const IconWrapper = styled.div`
     }
   }
   display: none;
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     display: flex;
     width: 10rem;
     justify-content: space-around;

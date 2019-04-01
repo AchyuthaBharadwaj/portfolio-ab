@@ -10,6 +10,8 @@ export const newColors = {
   navBack: `#01262F`,
   navFore: `#fff`,
   linkColor: `#61dafb`,
+  abotmecard: `#073541`,
+  skillback: `#d8d8d8`,
 }
 
 export const textSlanted = `font-family:'Caveat', cursive;`

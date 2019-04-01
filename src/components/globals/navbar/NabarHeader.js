@@ -34,7 +34,7 @@ const HeaderWrapper = styled.div`
     width: 50px;
     border-radius: 8px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .toggleIcon {
       display: none;
     }

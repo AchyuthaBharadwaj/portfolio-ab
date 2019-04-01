@@ -28,7 +28,7 @@ export default class Navbar extends Component {
 
 const NavWrapper = styled.nav`
   background: ${styles.newColors.navBack};
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     display: flex;
     align-items: center;
     height: 70px;

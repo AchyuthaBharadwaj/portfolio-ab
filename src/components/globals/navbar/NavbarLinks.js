@@ -66,7 +66,7 @@ const LinkWrapper = styled.ul`
   margin-block-end: 0em;
   ${styles.transDefault};
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     height: auto;
     display: flex;
     margin: 5px auto 0 10px;

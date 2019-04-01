@@ -1,3 +1,4 @@
 import * as styles from "./styles"
 import { Section } from "./section"
-export { styles, Section }
+import Banner from "./Banner"
+export { styles, Section, Banner }
