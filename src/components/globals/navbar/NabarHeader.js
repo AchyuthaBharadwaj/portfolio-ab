@@ -44,7 +44,7 @@ const HeaderWrapper = styled.div`
       margin-top: 50px;
 
       &:hover {
-        transform: scale(1.1) translate(10px, 10px);
+        transform: scale(1.1) translate(5px, 5px);
         ${styles.transDefault};
       }
     }

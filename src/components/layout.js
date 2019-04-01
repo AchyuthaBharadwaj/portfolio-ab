@@ -25,6 +25,7 @@ Layout.propTypes = {
 
 const LayoutWrapper = styled.div`
   color: ${styles.newColors.navFore};
+  overflow-x: hidden;
 `
 
 export default Layout

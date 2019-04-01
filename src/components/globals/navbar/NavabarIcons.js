@@ -43,10 +43,11 @@ const IconWrapper = styled.div`
     color: #fff;
     font-size: 1.3rem;
     cursor: pointer;
-    ${styles.transFunction()};
+    ${styles.transObject({ time: "0.3s" })};
 
     &:hover {
-      color: ${styles.colors.mainYellow};
+      color: ${styles.newColors.linkColor};
+      transform: scale(1.2);
     }
   }
   display: none;
