@@ -49,3 +49,34 @@ export const border = ({
 export const letterSpacing = ({ spacing = "0.1rem" }) => {
   return `letter-spacing:${spacing}`
 }
+
+export const slideDown = `@keyframes slide-down {
+  0 % {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100 % {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}`
+
+export const slideUp = `@keyframes slide-up {
+  0 % {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100 % {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}`
+
+export const fadeIn = `@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}`

@@ -8,6 +8,11 @@ export default class NavbarLinks extends Component {
     return (
       <LinkWrapper open={this.props.navbarOpen}>
         <li>
+          <Link to="/" className="nav-link home">
+            home
+          </Link>
+        </li>
+        <li>
           <Link to="/about/" className="nav-link about">
             about
           </Link>
@@ -74,6 +79,9 @@ const LinkWrapper = styled.ul`
       }
     }
 
+    .home {
+      border-bottom: 3px solid #f4a460;
+    }
     .about {
       border-bottom: 3px solid #dd0031;
     }
