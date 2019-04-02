@@ -21,7 +21,7 @@ export default class Right extends Component {
             worked for 3 years as a <b>Full-stack web developer. </b>
             Currently, I am pursuing my{" "}
             <b>Masters degree in Computer Science</b> at
-            <b> Arizona State University, Tempe, AZ.</b>
+            <b> ASU.</b>
           </p>
           <p>
             I am a professional Full-stack Web Developer, a Vegetarian, and a
@@ -91,7 +91,9 @@ const RightWrapper = styled.div`
   border-radius: 0.6rem;
   font-weight: 300;
   background: ${styles.newColors.abotmecard};
-
+  p {
+    padding-bottom: 0.8rem;
+  }
   h1 {
     padding: 1rem 0;
     font-size: 1.4rem;

@@ -249,8 +249,9 @@ export default class Skills extends Component {
       >
         {this.state.icons.map(item => {
           return (
-            <li className="skill" key={item.id}>
+            <li className="tooltip skill" key={item.id}>
               {item.icon}
+              <span class="tooltiptext">{item.hover}</span>
             </li>
           )
         })}
@@ -271,6 +272,32 @@ const SkillsWrapper = styled.ul`
     padding-top: 0.4rem;
     border-radius: 0.6rem;
     background: ${styles.newColors.skillback};
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    .tooltiptext {
+      visibility: hidden;
+      width: 100px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      top: -15px;
+      left: -20px;
+      z-index: 1;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+    }
+    &:hover {
+      .tooltiptext {
+        visibility: visible;
+      }
+    }
   }
 
   @media (min-width: 1000px) {

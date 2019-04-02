@@ -32,6 +32,7 @@ const AboutWrapper = styled.div`
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 400px 1fr;
+    overflow-y: hidden;
 
     .right {
       grid-column: 2;
