@@ -195,6 +195,51 @@ export default class Bars extends Component {
         color: "#e16f4a",
         height: "49%",
       },
+      {
+        id: 39,
+        color: "#ca0a0c",
+        height: "28%",
+      },
+      {
+        id: 40,
+        color: "#ae2b73",
+        height: "22%",
+      },
+      {
+        id: 41,
+        color: "#eb7f32",
+        height: "78%",
+      },
+      {
+        id: 42,
+        color: "#35e2a3",
+        height: "65%",
+      },
+      {
+        id: 43,
+        color: "#f52c29",
+        height: "87%",
+      },
+      {
+        id: 44,
+        color: "#648cbd",
+        height: "73%",
+      },
+      {
+        id: 45,
+        color: "#41a724",
+        height: "38%",
+      },
+      {
+        id: 46,
+        color: "#007931",
+        height: "78%",
+      },
+      {
+        id: 47,
+        color: "#648cbd",
+        height: "73%",
+      },
     ],
   }
 
@@ -252,13 +297,13 @@ export default class Bars extends Component {
 const BarsWrapper = styled.ul`
   display: flex;
   height: 100px;
-  width: 80vw;
+  width: 100vw;
   margin: 0 auto;
   .bar {
     list-style: none;
     width: 2vw;
-    margin-right: 0.5%;
-    opacity: 0.35;
+    margin-right: 2px;
+    opacity: 0.25;
     ${styles.transDefault};
     animation: bars 900ms ease-out;
     &:hover {
@@ -268,7 +313,7 @@ const BarsWrapper = styled.ul`
 
   @media (min-width: 768px) {
     height: 200px;
-    width: 85vw;
+    width: 100vw;
   }
 
   @keyframes bars {

@@ -32,6 +32,5 @@ const NavWrapper = styled.nav`
     display: flex;
     align-items: center;
     height: 70px;
-    z-index: 3;
   }
 `

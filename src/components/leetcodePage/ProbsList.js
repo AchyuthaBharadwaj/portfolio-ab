@@ -6,7 +6,10 @@ import { graphql, StaticQuery, Link } from "gatsby"
 
 const FIND_PROBS = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/leetcode/" } }
+      sort: { fields: [frontmatter___problem], order: DESC }
+    ) {
       edges {
         node {
           id
@@ -20,6 +23,7 @@ const FIND_PROBS = graphql`
             shortdesc
             tags
           }
+          excerpt
         }
       }
     }

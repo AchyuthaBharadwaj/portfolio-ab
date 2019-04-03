@@ -23,6 +23,7 @@ const HeaderWrapper = styled.div`
   padding: 0.4rem 1rem;
   display: flex;
   align-items: center;
+  z-index: 3;
   justify-content: space-between;
   .toggleIcon {
     font-size: 1.75rem;
@@ -33,6 +34,7 @@ const HeaderWrapper = styled.div`
     height: 50px;
     width: 50px;
     border-radius: 8px;
+    box-shadow: 0 0 5px ${styles.newColors.navBack};
   }
   @media (min-width: 1000px) {
     .toggleIcon {
