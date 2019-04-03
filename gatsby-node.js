@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-const { slugify } = require("./src/utils/slugify")
+const { maxProblemsPerPage } = require("./src/utils/config")
 const path = require("path")
 
 exports.onCreateNode = ({ node, actions }) => {
@@ -22,11 +22,18 @@ exports.onCreateNode = ({ node, actions }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const pageTemplate = path.resolve("src/templates/SinglePost.js")
+  const templates = {
+    pageTemplate: path.resolve("src/templates/SinglePost.js"),
+    problemListTemplate: path.resolve("src/templates/ProblemListTemplate.js"),
+  }
+
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/leetcode/" } }
+        ) {
+          totalCount
           edges {
             node {
               id
@@ -46,12 +53,30 @@ exports.createPages = ({ graphql, actions }) => {
       posts.map(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: pageTemplate,
+          component: templates.pageTemplate,
           context: {
             slug: node.fields.slug,
           },
         })
       })
+
+      const numOfPages = Math.ceil(
+        result.data.allMarkdownRemark.totalCount / maxProblemsPerPage
+      )
+
+      let i
+      for (i = 1; i < numOfPages; i++) {
+        createPage({
+          path: `/leetcode/page/${i + 1}`,
+          component: templates.problemListTemplate,
+          context: {
+            currentPage: i + 1,
+            skip: i * maxProblemsPerPage,
+            limit: maxProblemsPerPage,
+            numOfPages: numOfPages,
+          },
+        })
+      }
       resolve()
     })
   })
