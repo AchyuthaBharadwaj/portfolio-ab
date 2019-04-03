@@ -195,16 +195,6 @@ export default class Bars extends Component {
         color: "#e16f4a",
         height: "49%",
       },
-      {
-        id: 39,
-        color: "#648cbd",
-        height: "93%",
-      },
-      {
-        id: 40,
-        color: "#e16f4a",
-        height: "49%",
-      },
     ],
   }
 
@@ -234,6 +224,10 @@ export default class Bars extends Component {
     })
   }
 
+  componentDidMount() {
+    this.toggle()
+  }
+
   render() {
     return (
       <BarsWrapper>
@@ -258,7 +252,7 @@ export default class Bars extends Component {
 const BarsWrapper = styled.ul`
   display: flex;
   height: 100px;
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
   .bar {
     list-style: none;
@@ -274,7 +268,7 @@ const BarsWrapper = styled.ul`
 
   @media (min-width: 768px) {
     height: 200px;
-    width: 80vw;
+    width: 85vw;
   }
 
   @keyframes bars {

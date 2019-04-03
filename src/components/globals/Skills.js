@@ -8,19 +8,19 @@ export default class Skills extends Component {
     icons: [
       {
         id: 1,
-        icon: <i class="devicon-html5-plain colored" />,
+        icon: <i className="devicon-html5-plain colored" />,
         hover: "html5",
       },
       {
         id: 2,
-        icon: <i class="devicon-css3-plain colored" />,
+        icon: <i className="devicon-css3-plain colored" />,
         hover: "css3",
       },
       {
         id: 3,
         icon: (
           <i
-            class="devicon-react-original colored"
+            className="devicon-react-original colored"
             style={{ color: "black" }}
           />
         ),
@@ -39,19 +39,19 @@ export default class Skills extends Component {
       },
       {
         id: 5,
-        icon: <i class="devicon-csharp-plain colored" />,
+        icon: <i className="devicon-csharp-plain colored" />,
         hover: "c#",
       },
       {
         id: 6,
-        icon: <i class="devicon-dot-net-plain colored" />,
+        icon: <i className="devicon-dot-net-plain colored" />,
         hover: ".net",
       },
       {
         id: 7,
         icon: (
           <i
-            class="devicon-javascript-plain colored"
+            className="devicon-javascript-plain colored"
             style={{ color: "black" }}
           />
         ),
@@ -59,184 +59,187 @@ export default class Skills extends Component {
       },
       {
         id: 8,
-        icon: <i class="devicon-bootstrap-plain colored" />,
+        icon: <i className="devicon-bootstrap-plain colored" />,
         hover: "bootstrap",
       },
       {
         id: 9,
         icon: (
-          <i class="devicon-python-plain colored" style={{ color: "black" }} />
+          <i
+            className="devicon-python-plain colored"
+            style={{ color: "black" }}
+          />
         ),
         hover: "python",
       },
       {
         id: 10,
-        icon: <i class="devicon-java-plain colored" />,
+        icon: <i className="devicon-java-plain colored" />,
         hover: "java",
       },
       {
         id: 11,
-        icon: <i class="devicon-jquery-plain colored" />,
+        icon: <i className="devicon-jquery-plain colored" />,
         hover: "jquery",
       },
       {
         id: 12,
-        icon: <i class="devicon-sass-original colored" />,
+        icon: <i className="devicon-sass-original colored" />,
         hover: "sass",
       },
       {
         id: 13,
-        icon: <i class="devicon-linux-plain colored" />,
+        icon: <i className="devicon-linux-plain colored" />,
         hover: "linux",
       },
       {
         id: 14,
-        icon: <i class="devicon-pycharm-plain colored" />,
+        icon: <i className="devicon-pycharm-plain colored" />,
         hover: "pycharm",
       },
       {
         id: 15,
-        icon: <i class="devicon-nodejs-plain colored" />,
+        icon: <i className="devicon-nodejs-plain colored" />,
         hover: "nodejs",
       },
       {
         id: 16,
-        icon: <i class="devicon-bitbucket-plain colored" />,
+        icon: <i className="devicon-bitbucket-plain colored" />,
         hover: "bitbucket",
       },
       {
         id: 17,
-        icon: <i class="devicon-c-plain colored" />,
+        icon: <i className="devicon-c-plain colored" />,
         hover: "c",
       },
       {
         id: 18,
-        icon: <i class="devicon-chrome-plain colored" />,
+        icon: <i className="devicon-chrome-plain colored" />,
         hover: "chrome",
       },
       {
         id: 19,
-        icon: <i class="devicon-confluence-plain colored" />,
+        icon: <i className="devicon-confluence-plain colored" />,
         hover: "confluence",
       },
       {
         id: 20,
-        icon: <i class="devicon-github-plain colored" />,
+        icon: <i className="devicon-github-plain colored" />,
         hover: "github",
       },
       {
         id: 21,
-        icon: <i class="devicon-google-plain colored" />,
+        icon: <i className="devicon-google-plain colored" />,
         hover: "google",
       },
       {
         id: 22,
-        icon: <i class="devicon-cplusplus-plain colored" />,
+        icon: <i className="devicon-cplusplus-plain colored" />,
         hover: "c++",
       },
       {
         id: 23,
-        icon: <i class="devicon-facebook-plain colored" />,
+        icon: <i className="devicon-facebook-plain colored" />,
         hover: "facebook",
       },
       {
         id: 24,
-        icon: <i class="devicon-firefox-plain colored" />,
+        icon: <i className="devicon-firefox-plain colored" />,
         hover: "firefox",
       },
       {
         id: 25,
-        icon: <i class="devicon-git-plain colored" />,
+        icon: <i className="devicon-git-plain colored" />,
         hover: "git",
       },
       {
         id: 26,
-        icon: <i class="devicon-gitlab-plain colored" />,
+        icon: <i className="devicon-gitlab-plain colored" />,
         hover: "gitlab",
       },
       /*       {
         id: 27,
-        icon: <i class="devicon-slack-plain colored" />,
+        icon: <i className="devicon-slack-plain colored" />,
         hover: "slack",
       }, */
       {
         id: 28,
-        icon: <i class="devicon-sourcetree-plain colored" />,
+        icon: <i className="devicon-sourcetree-plain colored" />,
         hover: "sourcetree",
       },
       {
         id: 29,
-        icon: <i class="devicon-twitter-plain colored" />,
+        icon: <i className="devicon-twitter-plain colored" />,
         hover: "twitter",
       },
       {
         id: 30,
-        icon: <i class="devicon-ubuntu-plain colored" />,
+        icon: <i className="devicon-ubuntu-plain colored" />,
         hover: "ubuntu",
       },
       {
         id: 31,
-        icon: <i class="devicon-visualstudio-plain colored" />,
+        icon: <i className="devicon-visualstudio-plain colored" />,
         hover: "visualstudio",
       },
       {
         id: 32,
-        icon: <i class="devicon-windows8-plain colored" />,
+        icon: <i className="devicon-windows8-plain colored" />,
         hover: "windows8",
       },
       {
         id: 33,
-        icon: <i class="devicon-android-plain colored" />,
+        icon: <i className="devicon-android-plain colored" />,
         hover: "android",
       },
       {
         id: 34,
-        icon: <i class="devicon-angularjs-plain colored" />,
+        icon: <i className="devicon-angularjs-plain colored" />,
         hover: "android",
       },
       {
         id: 35,
-        icon: <i class="devicon-atom-plain colored" />,
+        icon: <i className="devicon-atom-plain colored" />,
         hover: "atom",
       },
       {
         id: 36,
-        icon: <i class="devicon-ie10-plain colored" />,
+        icon: <i className="devicon-ie10-plain colored" />,
         hover: "ie10",
       },
       {
         id: 37,
-        icon: <i class="devicon-intellij-plain colored" />,
+        icon: <i className="devicon-intellij-plain colored" />,
         hover: "intellij",
       },
       {
         id: 38,
-        icon: <i class="devicon-jetbrains-plain colored" />,
+        icon: <i className="devicon-jetbrains-plain colored" />,
         hover: "jetbrains",
       },
       {
         id: 39,
-        icon: <i class="devicon-php-plain colored" />,
+        icon: <i className="devicon-php-plain colored" />,
         hover: "php",
       },
       {
         id: 40,
-        icon: <i class="devicon-safari-plain colored" />,
+        icon: <i className="devicon-safari-plain colored" />,
         hover: "safari",
       },
       {
         id: 41,
-        icon: <i class="devicon-apple-plain colored" />,
+        icon: <i className="devicon-apple-plain colored" />,
         hover: "apple",
       },
       {
         id: 42,
-        icon: <i class="devicon-gimp-plain colored" />,
+        icon: <i className="devicon-gimp-plain colored" />,
         hover: "gimp",
       },
       {
         id: 43,
-        icon: <i class="devicon-photoshop-plain colored" />,
+        icon: <i className="devicon-photoshop-plain colored" />,
         hover: "photoshop",
       },
     ],
@@ -251,7 +254,7 @@ export default class Skills extends Component {
           return (
             <li className="tooltip skill" key={item.id}>
               {item.icon}
-              <span class="tooltiptext">{item.hover}</span>
+              <span className="tooltiptext">{item.hover}</span>
             </li>
           )
         })}
@@ -287,13 +290,17 @@ const SkillsWrapper = styled.ul`
       border-radius: 6px;
       padding: 5px 0;
       position: absolute;
-      top: -15px;
+      top: -25px;
       left: -20px;
       z-index: 1;
       font-size: 0.7rem;
       text-transform: uppercase;
     }
     &:hover {
+      box-shadow: 0 0 20px #fff;
+      cursor: pointer;
+      transform: scale(1.1);
+      ${styles.transObject({ time: "0.1s" })};
       .tooltiptext {
         visibility: visible;
       }

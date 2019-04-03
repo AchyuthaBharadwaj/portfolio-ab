@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Banner } from "../utils"
+import { Banner, Section } from "../utils"
 import Bars from "../components/globals/Bars"
 import Right from "../components/aboutPage/Right"
 import Left from "../components/aboutPage/Left"
@@ -22,13 +22,13 @@ const AboutPage = () => (
   </Layout>
 )
 
-const AboutWrapper = styled.div`
+const AboutWrapper = styled(Section)`
+  margin-top: -1rem;
   .right {
     animation: slide-up 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 400ms both;
   }
   @media (min-width: 1000px) {
     max-width: 1700px;
-    margin: 0 auto;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 400px 1fr;

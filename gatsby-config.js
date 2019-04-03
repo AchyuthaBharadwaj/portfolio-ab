@@ -14,12 +14,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `leetcode`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

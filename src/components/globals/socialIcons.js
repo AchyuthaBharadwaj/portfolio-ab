@@ -50,7 +50,7 @@ export default class SocialIcons extends Component {
       <SocialIconsWrapper className={this.props.className}>
         {this.state.icons.map(item => {
           return (
-            <div className="iconWrapper">
+            <div className="iconWrapper" key={item.id}>
               <a href={item.path} target="_blank" rel="noopener noreferrer">
                 {item.icon}
               </a>
