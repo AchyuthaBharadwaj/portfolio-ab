@@ -9,6 +9,8 @@ solution: "python"
 type: "medium"
 ---
 
+## Problem Statement
+
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
 ```
@@ -24,15 +26,18 @@ Write the code that will take a string and make this conversion given a number o
 string convert(string s, int numRows);
 Example 1:
 
+```
 Input: s = "PAYPALISHIRING", numRows = 3
 Output: "PAHNAPLSIIGYIR"
+```
+
 Example 2:
 
+```
 Input: s = "PAYPALISHIRING", numRows = 4
 Output: "PINALSIGYAHRPI"
 Explanation:
 
-```
 P     I    N
 A   L S  I G
 Y A   H R
@@ -44,7 +49,7 @@ P     I
 Runtime: 148 ms
 Memory Usage: 12.6 MB
 
-```
+```python
 class Solution:
     def convert(self, s: 'str', numRows: 'int') -> 'str':
         if numRows == 0:

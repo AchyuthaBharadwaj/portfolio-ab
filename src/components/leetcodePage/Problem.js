@@ -96,6 +96,7 @@ const ProblemWrapper = styled(Section)`
       span {
         font-weight: 700;
         font-size: 1.3rem;
+        opacity: 0.8;
       }
     }
 
@@ -118,6 +119,7 @@ const ProblemWrapper = styled(Section)`
 
   .solutionInfo {
     margin-bottom: 1rem;
+    opacity: 0.8;
     .solution {
       margin-left: 1rem;
       font-size: 0.7rem;

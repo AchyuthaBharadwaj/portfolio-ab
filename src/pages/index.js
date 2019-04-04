@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Intro from "../components/landingPage/Intro"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout noFooter={false}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Intro />
   </Layout>

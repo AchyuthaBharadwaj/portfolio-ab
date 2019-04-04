@@ -9,6 +9,6 @@ const slugify = function(text) {
     .replace(/-+$/, "") // Trim - from end of text
 }
 
-const maxProblemsPerPage = 4
+const maxProblemsPerPage = 6
 
 module.exports = { slugify, maxProblemsPerPage }

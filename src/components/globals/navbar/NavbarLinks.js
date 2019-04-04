@@ -60,7 +60,7 @@ const LinkWrapper = styled.ul`
       background: ${styles.colors.mainGrey};
     }
   }
-  height: ${props => (props.open ? "182px" : "0px")};
+  height: ${props => (props.open ? "212px" : "0px")};
   overflow: hidden;
   margin-block-start: 0em;
   margin-block-end: 0em;

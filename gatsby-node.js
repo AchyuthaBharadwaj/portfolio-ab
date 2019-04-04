@@ -59,7 +59,7 @@ exports.createPages = ({ graphql, actions }) => {
           },
         })
       })
-
+      console.log(result.data.allMarkdownRemark.totalCount)
       const numOfPages = Math.ceil(
         result.data.allMarkdownRemark.totalCount / maxProblemsPerPage
       )
