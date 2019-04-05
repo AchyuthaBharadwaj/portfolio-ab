@@ -8,7 +8,7 @@ const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
     <Bars />
-    <Banner title="Projects" subtitle="here are some of my selected works." />
+    <Banner title="lab" subtitle="comprehensive list of my recent works." />
   </Layout>
 )
 

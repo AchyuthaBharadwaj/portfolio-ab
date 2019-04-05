@@ -14,8 +14,8 @@ function BackButton({ link }) {
 }
 
 const BackButtonWrapper = styled(Link)`
-  width: 150px;
-  height: 60px;
+  width: 100px;
+  height: 40px;
   color: white;
   text-transform: capitalize;
   border-radius: 0.6rem;
@@ -30,16 +30,28 @@ const BackButtonWrapper = styled(Link)`
   text-decoration: none;
 
   .icon {
-    transform: translateX(40px);
+    transform: translateX(20px);
   }
   .text {
-    transform: translateX(50px);
+    transform: translateX(25px);
   }
   &:hover {
     transform: translateY(-5px);
     cursor: pointer;
     background: ${styles.colors.mainGrey};
     ${styles.transObject({ time: "0.3s" })};
+  }
+
+  @media (min-width: 768px) {
+    width: 150px;
+    height: 60px;
+
+    .icon {
+      transform: translateX(40px);
+    }
+    .text {
+      transform: translateX(50px);
+    }
   }
 `
 

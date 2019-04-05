@@ -42,6 +42,7 @@ const PostWrapper = styled(Section)`
   font-weight: 200;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: 0.9rem;
   .lastDiv {
     margin-top: 1.5rem;
   }
@@ -52,6 +53,7 @@ const PostWrapper = styled(Section)`
     color: ${styles.colors.mainYellow};
     display: flex;
     text-transform: capitalize;
+    font-size: 1.2rem;
     &:after {
       content: " ";
       background: linear-gradient(
@@ -93,6 +95,13 @@ const PostWrapper = styled(Section)`
       code {
         font-family: "Raleway", sans-serif;
       }
+    }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    h2 {
+      font-size: 1.6rem;
     }
   }
 `

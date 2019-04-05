@@ -23,8 +23,11 @@ exports.onCreateNode = ({ node, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const templates = {
-    pageTemplate: path.resolve("src/templates/SinglePost.js"),
+    problemPageTemplate: path.resolve("src/templates/SinglePost.js"),
     problemListTemplate: path.resolve("src/templates/ProblemListTemplate.js"),
+    projectPageTemplate: path.resolve(
+      "src/templates/ProjectInfoPageTemplate.js"
+    ),
   }
 
   return new Promise((resolve, reject) => {
@@ -53,13 +56,12 @@ exports.createPages = ({ graphql, actions }) => {
       posts.map(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: templates.pageTemplate,
+          component: templates.problemPageTemplate,
           context: {
             slug: node.fields.slug,
           },
         })
       })
-      console.log(result.data.allMarkdownRemark.totalCount)
       const numOfPages = Math.ceil(
         result.data.allMarkdownRemark.totalCount / maxProblemsPerPage
       )
@@ -77,6 +79,40 @@ exports.createPages = ({ graphql, actions }) => {
           },
         })
       }
+      resolve()
+    })
+
+    graphql(`
+      {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/projects/" } }
+        ) {
+          totalCount
+          edges {
+            node {
+              id
+              frontmatter {
+                title
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `).then(result => {
+      if (result.errors) return Promise.reject(result.errors)
+      const posts = result.data.allMarkdownRemark.edges
+      posts.map(({ node }) => {
+        createPage({
+          path: node.fields.slug,
+          component: templates.projectPageTemplate,
+          context: {
+            slug: node.fields.slug,
+          },
+        })
+      })
       resolve()
     })
   })

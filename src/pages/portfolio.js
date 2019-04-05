@@ -3,14 +3,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Banner } from "../utils"
 import Bars from "../components/globals/Bars"
-import ExperienceList from "../components/experiencePage/ExperienceList"
+import PortfolioList from "../components/portfolioPage/PortfolioList"
 
 const ExperiencePage = () => (
   <Layout>
-    <SEO title="Experience" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Portfolio" keywords={[`gatsby`, `application`, `react`]} />
     <Bars />
-    <Banner title="Experience" subtitle="my professional experience so far." />
-    <ExperienceList />
+    <Banner title="Portfolio" subtitle="here are some of my selected works." />
+    <PortfolioList />
   </Layout>
 )
 

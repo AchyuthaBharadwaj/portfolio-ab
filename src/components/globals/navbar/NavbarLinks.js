@@ -18,13 +18,13 @@ export default class NavbarLinks extends Component {
           </Link>
         </li>
         <li>
-          <Link to="/experience/" className="nav-link experience">
-            experience
+          <Link to="/portfolio/" className="nav-link portfolio">
+            portfolio
           </Link>
         </li>
         <li>
           <Link to="/projects/" className="nav-link projects">
-            projects
+            lab
           </Link>
         </li>
         <li>
@@ -60,7 +60,7 @@ const LinkWrapper = styled.ul`
       background: ${styles.colors.mainGrey};
     }
   }
-  height: ${props => (props.open ? "212px" : "0px")};
+  height: ${props => (props.open ? "219px" : "0px")};
   overflow: hidden;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -85,7 +85,7 @@ const LinkWrapper = styled.ul`
     .about {
       border-bottom: 3px solid #dd0031;
     }
-    .experience {
+    .portfolio {
       border-bottom: 3px solid #41b883;
     }
     .projects {

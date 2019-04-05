@@ -17,14 +17,23 @@ const KeyValHeaderWrapper = styled.div`
 
   .text {
     margin-right: 10px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
     color: ${styles.colors.mainYellow};
   }
   .val {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 400;
+  }
+
+  @media (min-width: 768px) {
+    .text {
+      font-size: 0.8rem;
+    }
+    .val {
+      font-size: 1.2rem;
+    }
   }
 `
