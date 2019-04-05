@@ -12,12 +12,13 @@ export default function Right({ className }) {
       <form
         className="form"
         action="/thanks/"
+        method="POST"
         netlify-honeypot="bot-field"
-        netlify
+        data-netlify="true"
       >
         <p style={{ display: "none" }}>
           <label>
-            Dont fill this: <input name="bot-field" />
+            Don’t fill this out if you're human: <input name="bot-field" />
           </label>
         </p>
         <p className="text" style={{ marginTop: "0" }}>
