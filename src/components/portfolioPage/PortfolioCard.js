@@ -47,6 +47,7 @@ const LinkWrapper = styled(Link)`
 
 const PortfolioCardWrapper = styled.div`
   background: ${styles.newColors.abotmecard};
+  box-shadow: 0 0 10px ${styles.newColors.navBack};
   padding: 0 0;
   font-weight: 300;
   border-radius: 0.6rem;
@@ -108,6 +109,7 @@ const PortfolioCardWrapper = styled.div`
 
   &:hover {
     transform: translateY(-10px);
+    box-shadow: 0 0 10px ${styles.newColors.linkColor};
     ${styles.transObject({ time: "0.3s" })};
   }
 

@@ -13,6 +13,7 @@ export const newColors = {
   abotmecard: `#073541`,
   skillback: `#d8d8d8`,
   tagBack: `#575759`,
+  buttonBack: `#2c3e50`,
 }
 
 export const textSlanted = `font-family:'Caveat', cursive;`

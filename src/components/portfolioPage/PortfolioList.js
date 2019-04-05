@@ -10,6 +10,7 @@ const PORTFOLIO_LIST = graphql`
         fileAbsolutePath: { regex: "/projects/" }
         frontmatter: { includeOnPortfolio: { eq: true } }
       }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {

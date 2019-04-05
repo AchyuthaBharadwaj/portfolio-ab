@@ -21,7 +21,7 @@ const BackButtonWrapper = styled(Link)`
   border-radius: 0.6rem;
   text-align: center;
   display: flex;
-  background: #2c3e50;
+  background: ${styles.newColors.buttonBack};
   line-height: 60px;
   box-shadow: 0 0 15px ${styles.newColors.navBack};
   font-weight: 400;
@@ -38,7 +38,7 @@ const BackButtonWrapper = styled(Link)`
   &:hover {
     transform: translateY(-5px);
     cursor: pointer;
-    background: ${styles.colors.mainGrey};
+    box-shadow: 0 0 10px ${styles.newColors.linkColor};
     ${styles.transObject({ time: "0.3s" })};
   }
 

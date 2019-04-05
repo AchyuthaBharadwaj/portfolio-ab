@@ -158,6 +158,7 @@ const ProblemWrapper = styled(Section)`
   &:hover {
     transform: translateY(-5px) !important;
     ${styles.transObject({ time: "0.2s" })};
+    box-shadow: 0 0 7px ${styles.newColors.linkColor};
     cursor: pointer;
     .moreInfo {
       .icon {

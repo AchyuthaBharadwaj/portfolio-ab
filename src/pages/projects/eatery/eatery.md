@@ -3,7 +3,7 @@ id: "1"
 title: "Eatery"
 shortdesc: "An awesome restaurant landing page built with GatsbyJs, graphql, styled components and much more."
 path: "/projects/eatery-ab"
-date: 2019-04-02 07:00:00
+date: 2019-03-02 07:00:00
 tags: "react, gatsby, sass"
 includeOnPortfolio: true
 thumbnail: ./eatery.PNG
