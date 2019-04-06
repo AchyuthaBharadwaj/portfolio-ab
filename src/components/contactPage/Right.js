@@ -25,11 +25,11 @@ export default function Right({ className }) {
         <p className="text" style={{ marginTop: "0" }}>
           Full name*
         </p>
-        <input type="text" className="input" required />
+        <input type="text" name="full-name" className="input" required />
         <p className="text">Your best email*</p>
-        <input type="text" className="input" required />
+        <input type="text" name="email" className="input" required />
         <p className="text">Your message*</p>
-        <textarea className="textArea" required />
+        <textarea name="message" className="textArea" required />
         <div className="lineBreak" />
         <div className="submitWrapper">
           <p className="message">*All fields are mandatory</p>

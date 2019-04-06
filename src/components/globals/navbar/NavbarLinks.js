@@ -8,32 +8,52 @@ export default class NavbarLinks extends Component {
     return (
       <LinkWrapper open={this.props.navbarOpen}>
         <li>
-          <Link to="/" className="nav-link home">
+          <Link to="/" activeClassName="active" className="nav-link home">
             home
           </Link>
         </li>
         <li>
-          <Link to="/about/" className="nav-link about">
+          <Link
+            to="/about/"
+            activeClassName="active"
+            className="nav-link about"
+          >
             about
           </Link>
         </li>
         <li>
-          <Link to="/portfolio/" className="nav-link portfolio">
+          <Link
+            to="/portfolio/"
+            activeClassName="active"
+            className="nav-link portfolio"
+          >
             portfolio
           </Link>
         </li>
         <li>
-          <Link to="/projects/" className="nav-link projects">
+          <Link
+            to="/projects/"
+            activeClassName="active"
+            className="nav-link projects"
+          >
             lab
           </Link>
         </li>
         <li>
-          <Link to="/leetcode/" className="nav-link leetcode">
+          <Link
+            to="/leetcode/"
+            activeClassName="active"
+            className="nav-link leetcode"
+          >
             LeetCode
           </Link>
         </li>
         <li>
-          <Link to="/contact/" className="nav-link contact">
+          <Link
+            to="/contact/"
+            activeClassName="active"
+            className="nav-link contact"
+          >
             contact
           </Link>
         </li>
@@ -59,6 +79,9 @@ const LinkWrapper = styled.ul`
     &:hover {
       background: ${styles.colors.mainGrey};
     }
+  }
+  .active {
+    background: ${styles.colors.mainGrey};
   }
   height: ${props => (props.open ? "219px" : "0px")};
   overflow: hidden;
