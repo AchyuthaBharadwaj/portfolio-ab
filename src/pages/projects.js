@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Banner } from "../utils"
 import Bars from "../components/globals/Bars"
-import ProjectsList from "../components/ProjectsPage/ProjectsList"
+import ProjectsList from "../components/projectsPage/ProjectsList"
 
 const ProjectsPage = () => (
   <Layout>
