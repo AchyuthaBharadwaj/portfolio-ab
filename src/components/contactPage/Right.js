@@ -15,6 +15,7 @@ export default function Right({ className }) {
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
+        name="contact-form"
       >
         <p style={{ display: "none" }}>
           <label>

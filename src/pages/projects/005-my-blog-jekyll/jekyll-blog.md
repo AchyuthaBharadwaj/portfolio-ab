@@ -1,12 +1,14 @@
 ---
-id: "1"
-title: "portfolio-ab.netlify.com"
-shortdesc: "created blazing fast personal portfolio with ReactJs, GatsbyJs, SASS, Styled components and more."
-path: "/projects/portfolio-ab"
-date: 2019-04-02 07:00:00
-tags: "react, gatsby, sass"
+id: "5"
+title: "Jekyll Blog"
+shortdesc: "Superfast blog built by customizing opensource jekyll theme."
+path: "/projects/jekyll-blog-ab"
+date: 2018-02-02 07:00:00
+tags: "jekyll"
+type: "front-end"
 includeOnPortfolio: true
-thumbnail: ./portfolio.PNG
+thumbnail: ./jekyll-blog.PNG
+language: "css"
 ---
 
 asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf

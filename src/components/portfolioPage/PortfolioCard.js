@@ -37,6 +37,7 @@ const ProjectContainer = styled(Section)`
   animation: slide-up 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
     calc(${props => props.index} * 400ms) both;
   width: 70vw;
+  max-width: 1000px;
 `
 
 const LinkWrapper = styled(Link)`
@@ -64,6 +65,7 @@ const PortfolioCardWrapper = styled.div`
     .imageWrapper {
       .titleImage {
         height: 100%;
+        max-height: 270px;
         width: 100%;
         border-radius: 0.6rem;
         box-shadow: 0 0 30px ${styles.colors.mainBlack};
@@ -119,6 +121,7 @@ const PortfolioCardWrapper = styled.div`
       !props.isIndexOdd ? `0.6fr 0.4fr` : `0.4fr 0.6fr`};
     height: 350px;
     width: 70vw;
+    max-width: 1000px;
 
     .titleImageContainer {
       grid-column: ${props => (props.isIndexOdd ? `2` : `1`)};

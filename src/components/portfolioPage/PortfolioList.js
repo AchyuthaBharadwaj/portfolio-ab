@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import PortfolioCard from "./PortfolioCard"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, Link } from "gatsby"
 import styled from "styled-components"
+import { styles } from "../../utils"
 
 const PORTFOLIO_LIST = graphql`
   query {
@@ -54,6 +55,9 @@ export default class PortfolioList extends Component {
             )
           }}
         />
+        <div className="viewMore">
+          <Link to="/projects/">View More</Link>
+        </div>
       </ProblemListWrapper>
     )
   }
@@ -61,4 +65,25 @@ export default class PortfolioList extends Component {
 
 const ProblemListWrapper = styled.div`
   margin-bottom: 2rem;
+  .viewMore {
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+    a {
+      width: 200px;
+      height: 60px;
+      background: ${styles.newColors.buttonBack};
+      box-shadow: 0 0 10px ${styles.newColors.navBack};
+      display: inline-block;
+      line-height: 57px;
+      text-decoration: none;
+      color: ${styles.colors.mainWhite};
+      border-radius: 0.6rem;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px ${styles.newColors.linkColor};
+        ${styles.transObject({ time: "0.3s" })};
+      }
+    }
+  }
 `
