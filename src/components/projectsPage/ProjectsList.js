@@ -29,7 +29,7 @@ const PROJECT_LIST = graphql`
   }
 `
 
-export default class Projects extends Component {
+export default class ProjectsList extends Component {
   render() {
     return (
       <StaticQuery
