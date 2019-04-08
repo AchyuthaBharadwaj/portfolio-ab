@@ -11,9 +11,9 @@ export default class ProjectsSection extends Component {
         <div className="cardsWrapper">
           {this.props.nodes.map((node, index) => {
             return (
-              <div key={index}>
+              <ProjectCardWrapper key={index} index={index}>
                 <ProjectCard node={node} index={index} />
-              </div>
+              </ProjectCardWrapper>
             )
           })}
         </div>
@@ -21,6 +21,11 @@ export default class ProjectsSection extends Component {
     )
   }
 }
+
+const ProjectCardWrapper = styled.div`
+  animation: slide-up 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
+    calc(${props => props.index} * 400ms) both;
+`
 
 const ProjectSectionWrapper = styled(Section)`
   width: 70vw;
@@ -53,6 +58,9 @@ const ProjectSectionWrapper = styled(Section)`
 
   @media (min-width: 900px) {
     width: 80vw;
+    .sectionTitle {
+      font-size: 1.5rem;
+    }
     .cardsWrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;

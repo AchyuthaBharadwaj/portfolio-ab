@@ -11,32 +11,10 @@ includeOnPortfolio: true
 thumbnail: ./eatery.PNG
 ---
 
-asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-asdfasdfasdfasdfasdf
-asdfasdfasdf
+Superfast full responsive restaurant landing page - Project written in GatsbyJs and hosted on Netlify. The code is fully Open Source under MIT license.
 
-```javascript
-query {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___problem], order: DESC }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            path
-            problem
-            title
-            solution
-            date(formatString: "MMM Do YYYY")
-            type
-            shortdesc
-            tags
-          }
-          excerpt
-        }
-      }
-    }
-  }
-```
+live: https://restaurant-ab.netlify.com/
+
+Repository: https://github.com/AchyuthaBharadwaj/restaurant-ab
+
+![](./eatery.PNG)

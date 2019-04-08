@@ -56,8 +56,6 @@ const ProjectCardWrapper = styled(Link)`
   color: ${styles.colors.mainWhite};
   padding: 1.5rem 1rem;
   font-weight: 300;
-  animation: slide-up 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
-    calc(${props => props.index} * 400ms) both;
 
   .headers {
     display: flex;

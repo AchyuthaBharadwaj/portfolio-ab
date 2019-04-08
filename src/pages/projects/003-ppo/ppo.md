@@ -11,7 +11,7 @@ language: "python"
 thumbnail: ./cover.jpg
 ---
 
-### Goals:
+## Goals
 
 - Comparing the algorithm performance with other baseline techniques for OpenAI game environment
 - Exploring performance based on input data preprocessing , using different Neural Network architectures & CPU vs GPU training
@@ -19,7 +19,7 @@ thumbnail: ./cover.jpg
 
 [link to repository](https://github.com/AchyuthaBharadwaj/PPO)
 
-### Implementation:
+## Implementation
 
 - The model is developed using TensorFlow and input data is collected from OpenAI GYM's MS-PACMAN environment.
 - Performance of different neural network architectures is explored:
@@ -29,6 +29,6 @@ thumbnail: ./cover.jpg
 - GPU based training was done using Google Collaboratory
 - Reference : OpenAI GYM Baselines
 
-### Output:
+## Output
 
 Different models based on the modified hyperparemeters, CPU training & GPU training. Performance comparison(rewards & loss function) plots.

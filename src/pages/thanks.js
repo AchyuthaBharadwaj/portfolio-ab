@@ -11,18 +11,18 @@ export default function ThanksPage() {
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
       <Bars />
-      <IconWrapper>
+      <MessageWrapper>
         <FaCheck className="icon" />
         <h1 className="heading">many thanks..</h1>
         <p>
           I have recieved your message and will respond as soon as possible.
         </p>
-      </IconWrapper>
+      </MessageWrapper>
     </Layout>
   )
 }
 
-const IconWrapper = styled.div`
+const MessageWrapper = styled.div`
   width: 60vw;
   text-align: center;
   margin: 0 auto;

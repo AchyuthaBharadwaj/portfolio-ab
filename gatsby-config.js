@@ -9,14 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `leetcode`,
+        name: `posts`,
         path: `${__dirname}/src/pages`,
       },
     },
@@ -44,6 +37,27 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              // `ignoreFileExtensions` defaults to [`png`, `jpg`, `jpeg`, `bmp`, `tiff`]
+              // as we assume you'll use gatsby-remark-images to handle
+              // images in markdown as it automatically creates responsive
+              // versions of images.
+              //
+              // If you'd like to not use gatsby-remark-images and just copy your
+              // original images to the public directory, set
+              // `ignoreFileExtensions` to an empty array.
+              ignoreFileExtensions: [
+                `png`,
+                `jpg`,
+                `jpeg`,
+                `PNG`,
+                `JPG`,
+                `JPEG`,
+              ],
+            },
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

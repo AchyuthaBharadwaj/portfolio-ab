@@ -2,8 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Banner } from "../utils"
+import { Section, KeyValHeader, styles, BackButton } from "../utils"
 import Bars from "../components/globals/Bars"
+import styled from "styled-components"
 
 export default function ProjectInfoPageTemplate({ data }) {
   const project = data.markdownRemark.frontmatter
@@ -11,10 +12,92 @@ export default function ProjectInfoPageTemplate({ data }) {
     <Layout>
       <SEO title="Projets" keywords={[`gatsby`, `application`, `react`]} />
       <Bars />
-      <Banner title={project.title} subtitle={project.shortdesc} />
+      <PageWrapper>
+        <h1 className="pageTitle">{project.title}</h1>
+        <InfoSection>
+          <KeyValHeader text="date" val={project.date} />
+          <KeyValHeader text="category" val={project.type} />
+          <KeyValHeader text="short description" val={project.shortdesc} />
+          <div
+            className="postContainer gatsby-highlight"
+            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+          />
+          <div>
+            <BackButton link="/projects/" />
+          </div>
+        </InfoSection>
+      </PageWrapper>
     </Layout>
   )
 }
+
+const PageWrapper = styled.div`
+  margin-bottom: 2rem;
+  .pageTitle {
+    text-align: center;
+    padding: 2rem;
+  }
+`
+
+const InfoSection = styled(Section)`
+  width: 85vw;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 0.6rem;
+  background: ${styles.newColors.abotmecard};
+  .postContainer {
+    margin: 2rem 0;
+    line-height: 2rem;
+    a {
+      text-decoration: none;
+      color: ${styles.newColors.linkColor};
+      border-bottom: 1px solid;
+    }
+
+    ul {
+      padding-left: 2rem;
+    }
+
+    h2 {
+      margin: 2rem 0 1rem 0;
+      font-weight: 500;
+      font-size: 1.7rem;
+      color: ${styles.colors.mainYellow};
+      display: flex;
+      &:after {
+        content: " ";
+        background: linear-gradient(
+          to right,
+          rgba(32, 104, 130, 0.6),
+          rgb(0, 61, 76)
+        );
+        height: 2px;
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: auto;
+        margin: 0.75em 2px 0 5px;
+        flex-grow: 1;
+        border-radius: 2px;
+      }
+    }
+
+    img {
+      width: 90%;
+      margin: 1rem 0;
+      box-shadow: 0 0 10px ${styles.newColors.navBack};
+      border-radius: 0.6rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 70vw;
+    max-width: 1000px;
+    .postContainer {
+    }
+  }
+`
 
 export const projectQuery = graphql`
   query projectBySlug($slug: String!) {
@@ -25,6 +108,8 @@ export const projectQuery = graphql`
         path
         title
         shortdesc
+        date(formatString: "MMM Do YYYY")
+        type
       }
     }
   }

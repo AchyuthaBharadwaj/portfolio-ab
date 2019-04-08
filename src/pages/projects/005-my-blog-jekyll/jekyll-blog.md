@@ -11,32 +11,10 @@ thumbnail: ./jekyll-blog.PNG
 language: "css"
 ---
 
-asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-asdfasdfasdfasdfasdf
-asdfasdfasdf
+Superfast full responsive blog page customized from Open source Jekyll theme "GALADA".
 
-```javascript
-query {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___problem], order: DESC }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            path
-            problem
-            title
-            solution
-            date(formatString: "MMM Do YYYY")
-            type
-            shortdesc
-            tags
-          }
-          excerpt
-        }
-      }
-    }
-  }
-```
+live: https://achyuthabharadwaj.github.io/
+
+Repository: https://github.com/AchyuthaBharadwaj/AchyuthaBharadwaj.github.io
+
+![](./jekyll-blog.PNG)
