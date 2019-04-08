@@ -9,16 +9,10 @@ export default function Right({ className }) {
         Or fill in your details below and wait for me to contact you.
       </p>
       <div className="lineBreak" />
-      <form
-        className="form"
-        method="POST"
-        data-netlify-recaptcha="true"
-        data-netlify="true"
-        name="contact-form"
-      >
-        <p className="text" style={{ marginTop: "0" }}>
+      <form className="form" method="POST" name="contact-form" netlify>
+        <label for="full-name" className="text" style={{ marginTop: "0" }}>
           Full name*
-        </p>
+        </label>
         <input
           type="text"
           name="full-name"
@@ -26,9 +20,13 @@ export default function Right({ className }) {
           className="input"
           required
         />
-        <p className="text">Your best email*</p>
+        <label for="email" className="text">
+          Your best email*
+        </label>
         <input type="text" name="email" id="email" className="input" required />
-        <p className="text">Your message*</p>
+        <label for="message" className="text">
+          Your message*
+        </label>
         <textarea name="message" id="message" className="textArea" required />
         <div data-netlify-recaptcha="true" />
         <div className="lineBreak" />
@@ -66,7 +64,7 @@ const RightWrapper = styled(Section)`
     .input,
     .textArea {
       width: 100%;
-      margin-top: 0.6rem;
+      margin: 0.6rem 0;
       height: 2.5rem;
       border-radius: 0.6rem;
       background: ${styles.colors.mainWhite};
