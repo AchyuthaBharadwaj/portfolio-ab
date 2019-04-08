@@ -4,11 +4,12 @@
 
 My superfast personal site built using ReactJs / Gatsbyjs - Project written in GatsbyJs and hosted on Netlify. The code is fully Open Source under MIT license.
 
-## 🚀 Quick start
+## Quick start
 
 1.  **Install nodeJs and gatsbyJs.**
 
     Download and Install nodeJs frpm https://nodejs.org/en/.
+
     Follow the steps here and install Gatsby https://www.gatsbyjs.org/docs/quick-start
 
 2.  **Fork the repo.**
@@ -16,6 +17,7 @@ My superfast personal site built using ReactJs / Gatsbyjs - Project written in G
 3.  **Install gatsby plugins.**
 
     search for info on these plugins https://www.gatsbyjs.org/plugins/
+
     Required Plugins:
 
     - gatsby-remark-images
@@ -33,13 +35,13 @@ My superfast personal site built using ReactJs / Gatsbyjs - Project written in G
     gatsby develop
     ```
 
-5.  **Open the source code and start editing!**
-
     Site is now running at `http://localhost:8000`!
 
-## 🧐 What's inside?
+5.  **Open the source code and start editing!**
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+## What's inside?
+
+A quick look at the top-level files and directories.
 
     .
     ├── node_modules
