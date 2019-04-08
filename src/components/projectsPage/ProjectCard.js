@@ -11,7 +11,7 @@ const colors = {
   },
   gatsbyJs: {
     fore: "#fff",
-    back: "#41b883",
+    back: "#663399",
   },
   css: {
     fore: "#fff",
@@ -76,7 +76,6 @@ const ProjectCardWrapper = styled(Link)`
       padding: 0.3rem 0.6rem;
       border-radius: 0.3rem;
       box-shadow: 0 0 10px ${styles.newColors.navBack};
-      text-transform: capitalize;
       transform: translateY(-5px);
     }
   }

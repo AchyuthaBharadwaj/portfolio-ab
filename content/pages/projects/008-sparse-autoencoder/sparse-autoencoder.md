@@ -13,7 +13,7 @@ language: "python"
 
 ## Semi Supervised Learning Using Sparse Autoencoder
 
-![](./sae-1.png)
+![](sae-1.png)
 
 ### Goals:
 
@@ -50,7 +50,7 @@ The model is developed using TensorFlow. The weight matrix mosiac for a given sp
   ![](./sae-original.png)
 
 - The regenerated image
-  ![](./sae-generated.png)
+  ![](./sae-generated.PNG)
 
 For semi supervised learning the same tensorflow model was used for initial training. Subsequent implementation of generiac neural network model and training of encoder-softmax & fine-tuning of input-encoder-softmax model was done using keras.
 

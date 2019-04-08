@@ -13,15 +13,9 @@ export default function Right({ className }) {
         className="form"
         action="/thanks/"
         method="POST"
-        netlify-honeypot="bot-field"
         data-netlify="true"
         name="contact-form"
       >
-        <p style={{ display: "none" }}>
-          <label>
-            Don’t fill this out if you're human: <input name="bot-field" />
-          </label>
-        </p>
         <p className="text" style={{ marginTop: "0" }}>
           Full name*
         </p>

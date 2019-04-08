@@ -48,9 +48,7 @@ const InfoSection = styled(Section)`
     margin: 2rem 0;
     line-height: 2rem;
     a {
-      text-decoration: none;
       color: ${styles.newColors.linkColor};
-      border-bottom: 1px solid;
     }
 
     ul {
@@ -85,8 +83,7 @@ const InfoSection = styled(Section)`
 
     img {
       width: 90%;
-      margin: 1rem 0;
-      box-shadow: 0 0 10px ${styles.newColors.navBack};
+      box-shadow: 0 0 10px ${styles.newColors.navBack} !important;
       border-radius: 0.6rem;
     }
   }
