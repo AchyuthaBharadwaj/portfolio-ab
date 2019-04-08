@@ -12,7 +12,7 @@ My superfast personal site built using ReactJs / Gatsbyjs - Project written in G
 
     Follow the steps here and install Gatsby https://www.gatsbyjs.org/docs/quick-start
 
-2.  **Fork the repo.**
+2.  **Clone the repo.**
 
 3.  **Install gatsby plugins.**
 
@@ -30,8 +30,9 @@ My superfast personal site built using ReactJs / Gatsbyjs - Project written in G
 
 4.  **Run the app.**
 
+    Navigate to the directory and run the app,
+    
     ```
-    cd my-default-starter/
     gatsby develop
     ```
 
