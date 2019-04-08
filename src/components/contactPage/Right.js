@@ -19,11 +19,18 @@ export default function Right({ className }) {
         <p className="text" style={{ marginTop: "0" }}>
           Full name*
         </p>
-        <input type="text" name="full-name" className="input" required />
+        <input
+          type="text"
+          name="full-name"
+          id="full-name"
+          className="input"
+          required
+        />
         <p className="text">Your best email*</p>
-        <input type="text" name="email" className="input" required />
+        <input type="text" name="email" id="email" className="input" required />
         <p className="text">Your message*</p>
-        <textarea name="message" className="textArea" required />
+        <textarea name="message" id="message" className="textArea" required />
+        <div data-netlify-recaptcha="true" />
         <div className="lineBreak" />
         <div className="submitWrapper">
           <p className="message">*All fields are mandatory</p>

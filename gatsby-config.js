@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Achyutha's Portfolio`,
     description: `Achyutha's portfolio. built with latest technologies like React, Gatsby, HTML5, CSS3, SASS and many more`,
-    author: `@gatsbyjs`,
+    author: `@AchyuthBharadwaj`,
     siteUrl: `https://portfolio-ab.netlify.com`,
   },
   plugins: [
