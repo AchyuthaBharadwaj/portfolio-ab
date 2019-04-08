@@ -14,3 +14,7 @@
 body {
   background: #002b36;
 }
+
+.gatsby-resp-image-link {
+  margin: 1rem 0;
+}
