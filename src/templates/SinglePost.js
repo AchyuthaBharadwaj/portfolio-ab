@@ -75,7 +75,9 @@ const PostWrapper = styled(Section)`
   }
   .postContainer {
     margin: 0 auto;
-
+    ul {
+      margin-left: 2rem;
+    }
     p {
       padding: 1rem 0 0 0;
     }

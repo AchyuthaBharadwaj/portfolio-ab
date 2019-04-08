@@ -6,8 +6,8 @@ import {
   FaLinkedinIn,
   FaTwitter,
   FaFacebook,
-  FaWhatsapp,
-  FaGooglePlus,
+  FaInstagram,
+  FaPaypal,
 } from "react-icons/fa"
 
 export default class SocialIcons extends Component {
@@ -26,22 +26,22 @@ export default class SocialIcons extends Component {
       {
         id: 2,
         icon: <FaTwitter className="icon" />,
-        path: "https://www.twitter.com",
+        path: "https://twitter.com/achyutha1729",
       },
       {
         id: 3,
         icon: <FaFacebook className="icon" />,
-        path: "https://www.facebook.com",
+        path: "https://www.facebook.com/achyutha.bharadwaj.7",
       },
       {
         id: 4,
-        icon: <FaWhatsapp className="icon" />,
-        path: "https://www.whatsapp.com",
+        icon: <FaInstagram className="icon" />,
+        path: "https://www.instagram.com/achyuthabharadwaj/",
       },
       {
         id: 5,
-        icon: <FaGooglePlus className="icon" />,
-        path: "https://www.google.com",
+        icon: <FaPaypal className="icon" />,
+        path: "https://paypal.me/achyuthabharadwaj",
       },
     ],
   }

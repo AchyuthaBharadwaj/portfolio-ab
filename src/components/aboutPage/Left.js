@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Section, styles } from "../../utils"
 import styled from "styled-components"
-import ProfilePic from "../../images/portrait.jpg"
+import portrait from "../../../content/assets/portrait.jpg"
 import SocialIcons from "../globals/socialIcons"
 import Skills from "../globals/Skills"
 
@@ -10,7 +10,7 @@ export default class Left extends Component {
     return (
       <LeftSectionWrapper className={this.props.className}>
         <LeftWrapper>
-          <img src={ProfilePic} alt="profile-pic" className="profilePic" />
+          <img src={portrait} alt="profile-pic" className="profilePic" />
           <SocialIcons className="socialIcons" />
           <h1>my skills</h1>
           <div className="skillsGrid">

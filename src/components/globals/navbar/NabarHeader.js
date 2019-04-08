@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { FaEllipsisH } from "react-icons/fa"
 import styled from "styled-components"
 import { styles } from "../../../utils"
-import portrait from "../../../images/portrait.jpg"
+import portrait from "../../../../content/assets/portrait.jpg"
 
 export default class NabarHeader extends Component {
   render() {

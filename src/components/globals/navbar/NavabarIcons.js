@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { styles } from "../../../utils"
-import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa"
+import { FaLinkedinIn, FaPaypal, FaGithub } from "react-icons/fa"
 
 export default class NavabarIcons extends Component {
   state = {
@@ -18,8 +18,8 @@ export default class NavabarIcons extends Component {
       },
       {
         id: 2,
-        icon: <FaTwitter className="icon" />,
-        path: "https://www.twitter.com",
+        icon: <FaPaypal className="icon" />,
+        path: "https://paypal.me/achyuthabharadwaj",
       },
     ],
   }

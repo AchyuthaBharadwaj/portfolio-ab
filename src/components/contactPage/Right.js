@@ -9,7 +9,13 @@ export default function Right({ className }) {
         Or fill in your details below and wait for me to contact you.
       </p>
       <div className="lineBreak" />
-      <form className="form" method="POST" name="contact-form" netlify>
+      {/* <form
+        className="form"
+        action="/thanks/"
+        method="POST"
+        name="Contact"
+        netlify
+      >
         <label for="full-name" className="text" style={{ marginTop: "0" }}>
           Full name*
         </label>
@@ -34,6 +40,35 @@ export default function Right({ className }) {
           <p className="message">*All fields are mandatory</p>
           <input className="submit" type="submit" value="Ok, Send!" />{" "}
         </div>
+      </form> */}
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>
+            Your Name: <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email: <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Role:{" "}
+            <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>
+            Message: <textarea name="message" />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
       </form>
     </RightWrapper>
   )
