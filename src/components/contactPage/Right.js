@@ -11,7 +11,8 @@ export default function Right({ className }) {
       <div className="lineBreak" />
       <form
         className="form"
-        action="POST"
+        method="POST"
+        data-netlify-recaptcha="true"
         data-netlify="true"
         name="contact-form"
       >
